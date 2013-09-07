@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fixer</string>
+    <string name="project_number">578192000381</string>
+    <string name="first_launch">First Launch</string>
+    <string name="action_settings">Settings</string>
+    <string name="lokalizacja_serviceman">Moja Lokalizacja</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_zlecenia_lista">ZleceniaListaActivity</string>
+    <string name="title_activity_lokalizacja_service_man">Lokalizacja</string>
+    <string name="title_activity_show_order">Szczegóły zgłoszenia</string>
+    <string name="title_activity_serviceman_offer">Złóż ofertę</string>
+    <string name="title_activity_test">Test</string>
+
+</resources>

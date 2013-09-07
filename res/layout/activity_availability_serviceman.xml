@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".AvailabilityServiceManActivity" >
+
+        <TextView
+            android:id="@+id/txtMiasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miejscowość" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMiasto"
+            android:focusable="false"
+            android:hint="Miasto"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txtUlica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:paddingTop="10dp"
+            android:text="Ulica" />
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUlica"
+            android:focusable="false"
+            android:hint="Ulica"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txtNumer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/street"
+            android:paddingTop="10dp"
+            android:text="Numer" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txtZasieg"
+            android:layout_below="@+id/txtNumer"
+            android:focusable="false"
+            android:hint="Numer"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txtZasieg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number"
+            android:paddingTop="10dp"
+            android:text="Promień działania w km" />
+
+        <EditText
+            android:id="@+id/working_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtZasieg"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Promień działania w km."
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxAutoTracking"
+            android:layout_marginBottom="10dp"
+            android:text="Czas odświeżania lokalizacji" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAutoTracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerTimeTracking"
+            android:layout_below="@+id/working_range"
+            android:layout_marginTop="10dp"
+            android:text="Automatyczna aktualizacja lokalizacji" />
+
+        <Spinner
+            android:id="@+id/spinnerTimeTracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:entries="@array/tracking_time_spinner_list"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnMapViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnGetGPSLocation"
+            android:layout_alignBottom="@+id/btnGetGPSLocation"
+            android:layout_alignRight="@+id/working_range"
+            android:text="Pokaż na mapie"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinnerTimeTracking"
+            android:text="Zatwierdź" />
+
+        <Button
+            android:id="@+id/btnGetGPSLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/number"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Pobierz z GPS" />
+    </RelativeLayout>
+
+</ScrollView>

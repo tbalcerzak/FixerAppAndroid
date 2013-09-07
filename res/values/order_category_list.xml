@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_category_list">
+        <item>Nowe</item>
+        <item>Złożone</item>
+        <item>Moje</item>
+        <item>Zakończone</item>
+    </string-array>
+</resources>

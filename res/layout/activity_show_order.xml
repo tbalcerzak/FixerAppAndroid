@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ShowOrderActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pokaż na mapie"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Złóż ofertę"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_change_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zmień cenę"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bid_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PODSTAWOWE INFORMACJE"
+                android:textColor="#0099CC"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#0099CC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutNazwa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:text="Ustawienie kontroli rodzicielskiej"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#99CC00"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="FV"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numer zamówienia: 1012" />
+
+            <TextView
+                android:id="@+id/created_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opublikowano: 2012-34-12 15:30" />
+
+            <TextView
+                android:id="@+id/offer_dedline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Termin składania ofert: 2012-34-12 15:30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OCZEKIWANIA KLIENTA"
+                android:textColor="#0099CC"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DCDCDC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dane klienta:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Białystok, Legionowa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Warunki realizacji:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/realization_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2012-34-12, godz. 8-10 " />
+
+            <TextView
+                android:id="@+id/price_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena: 100zł"
+                android:visibility="visible" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DCDCDC" />
+
+            <TextView
+                android:id="@+id/serviceman_offert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Złożona oferta:"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/serviceman_realization_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dzień: 2012-34-12, godz. 8-10 "
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/serviceman_realization_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/serviceman_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena: 99zł"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/serviceman_dsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uwagi: jakies moje uwagi na temat zglsozenia"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DCDCDC" />
+
+            <Spinner
+                android:id="@+id/spinner_assets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DODATKOWE INFORMACJE"
+                android:textColor="#0099CC"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#0099CC"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/problems_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Manufacturer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tree_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/problem_dsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DANE KONTAKTOWE"
+                android:textColor="#0099CC"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#0099CC"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

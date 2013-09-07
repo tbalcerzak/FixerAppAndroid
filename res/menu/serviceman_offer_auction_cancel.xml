@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/cancel_offer"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Anuluj ofertę"/>
+    <item
+        android:id="@+id/show_map_order"
+        android:icon="@drawable/location_place"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Pokaż na mapie"/>
+
+</menu>
